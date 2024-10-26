@@ -30,12 +30,6 @@
                         <input type="password" id="password" name="password" required>
                         <label for="password">Contraseña</label>
                     </div>
-                    <div class = "olvidar">
-                        <label for="#">
-                            <input type="checkbox">
-                            <a href="#">olvide mi contraseña</a>
-                        </label>
-                    </div>
 
                     <div class="d-flex justify-content-center p-2">
                         <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
