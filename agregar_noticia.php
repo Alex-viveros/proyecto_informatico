@@ -13,6 +13,7 @@ $result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Lista de Usuarios</title>
+
 </head>
 
 <body>
@@ -34,7 +35,7 @@ $result = $conn->query($sql);
                 </div>
 
                 <div class = "input-contenedor">
-                    <label for="rol" >categoria</label>
+                    <label for="rol" class="p-2">categoria</label>
                     <select id="rol" name="categoria" class="form-select" aria-label="Default select example">
                         <?php
                         if ($result->num_rows > 0) {

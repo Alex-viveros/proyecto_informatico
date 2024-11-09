@@ -23,24 +23,32 @@ $result = $conn->query($sql);
     <?php
     if ($_SESSION)
         echo '
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="/">
+                <img src="img/Noticias_Argentinas.jpg" alt="" height="60">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mi-menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <div class="collapse navbar-collapse" id="mi-menu">
+
+                <ul class="navbar-nav mx-auto">
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="dashboard.php">Dashboard</a>
                     </li>
 
-
                 </ul>
-                <a href="logout.php" class="btn btn-danger">Cerrar Sesión</a>
-
+                
+                
             </div>
-        </div>
+
+            <a href="logout.php" class="btn btn-danger">Cerrar Sesión</a>
     </nav>';
     else
         echo '
@@ -58,7 +66,7 @@ $result = $conn->query($sql);
 
 
                 </ul>
-                <a href="login.php" class="btn btn-outline-primary m-2">Login</a>
+                <a href="login.php" class="btn btn-outline-primary m-2">iniciar sesion</a>
                 <a href="index.php" class="btn btn-outline-primary m-2">registrarse</a>
 
 
